@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+    position: sticky;
+    left: 0px;
+    height: 100vh;
+    display: inline-block;
+    width: 20vw;
+    background-color: rgb(47, 0, 255);
+    color: white;
+}
+
+#menulist{
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#menulist li{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 0.5cm;
+    box-sizing: border-box;
+}
+
+
+#menulist li:hover{
+    background-color: blue;
+}
+
+#myimage{
+    background-color: white;
+    height: 40%;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid yellow;
+    border-radius: 50%;
+}
