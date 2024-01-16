@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+   
 }
 
 #menulist li {
@@ -58,4 +59,36 @@
     top: 0px;
     width: 80vw;
     height: 100vh;
+} 
+
+ form{
+
+    width: 40%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    color: rgb(47, 0, 255);
+}
+
+form label,input, textarea{
+    display: inline-block;
+    width: 100%;
+    font-size: large;
+    border-radius: 5px;
+    color: rgb(47, 0, 255);
+}
+
+.text{
+   
+    width: 50%;
+    color: #087990;
+    text-align: center;
+    font-size: larger;
+}
+
+.text:hover{
+    color: #087990;
+    background-color: rgba(128, 128, 128, 0.212);
 }
