@@ -37,9 +37,6 @@ app.post("/contact", (req, res)=>{
     const mail = req.body.email;
     const message = req.body.Message;
 
-    console.log(name);
-    console.log(mail);
-    console.log(message);
 
     const sql = `insert into contact (Organisation_Name, Email, Message, Send_Date) value ("${name}", "${mail}", "${message}", current_date());`;
 
