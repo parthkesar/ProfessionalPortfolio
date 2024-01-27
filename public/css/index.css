@@ -11,6 +11,9 @@
     width: 20vw;
     background-color: rgb(47, 0, 255);
     color: white;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 #menulist {
@@ -59,6 +62,9 @@
     top: 0px;
     width: 80vw;
     height: 100vh;
+    transition-property: transform, width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 } 
 
  form{
