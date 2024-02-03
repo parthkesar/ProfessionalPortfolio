@@ -100,7 +100,27 @@ textarea {
     color: #087990;
     background-color: rgba(128, 128, 128, 0.212);
 }
-
-.socialMedia {
-    margin: 5%;
+#resume{
+    box-sizing: border-box;
+    color: rgb(47, 0, 255);
+    border: 3px solid rgb(47, 0, 255);
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 0.5vh 1vw;
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
+
+#resume:hover{
+    color: blue;
+    border: 3px solid blue;
+}
+
+#cross{display: none;}
+
+@media screen and (max-width: 1142px) {
+    #cross{
+        display: inline;
+    }
+  }

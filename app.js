@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
+const secret = require("./secret")
 
 const app = express();
 const port = 3000;
@@ -16,10 +17,10 @@ app.set('trust proxy', true);
 
 //DATABASE
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'P@rth123',
-  database: 'myPersonalPortfolio'
+  host: secret.host,
+  user: secret.user,
+  password: secret.password,
+  database: secret.database
 });
 
 
