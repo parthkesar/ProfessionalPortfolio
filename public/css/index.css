@@ -116,11 +116,21 @@ textarea {
     color: blue;
     border: 3px solid blue;
 }
-
+#myimage{
+    display: inline-block;
+}
 #cross{display: none;}
 
 @media screen and (max-width: 1142px) {
     #cross{
         display: inline;
+    }
+
+    #myimage{
+        display: none;
+    }
+
+    #menulist{
+        top: 50%;
     }
   }
