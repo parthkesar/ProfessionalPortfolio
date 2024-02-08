@@ -45,25 +45,11 @@ function menuloadagain() {
 
 let bt = document.getElementsByClassName("menuListItems");
 
+function changeColor(event) {
+    // Change the background color of the clicked element
+    event.target.style.backgroundColor = 'blue';
+}
 
-document.getElementById('about').addEventListener("click", ()=>{
-    document.getElementById('about').style.backgroundColor = "blue";
-    });
-
-    document.getElementById('contactMessager').addEventListener("click", ()=>{
-        document.getElementById('contactMessager').style.backgroundColor = "blue";
-        });
-
-        document.getElementById('Projects').addEventListener("click", ()=>{
-            document.getElementById('Projects').style.backgroundColor = "blue";
-            });
-
-
-    document.getElementById('Skills').addEventListener("click", ()=>{
-    document.getElementById('Skills').style.backgroundColor = "blue";
-    });
-
-
-    document.getElementById('Documents').addEventListener("click", ()=>{
-        document.getElementById('Documents').style.backgroundColor = "blue";
-        });
+for (var i = 0; i < bt.length; i++) {
+    bt[i].addEventListener('click', changeColor);
+}
