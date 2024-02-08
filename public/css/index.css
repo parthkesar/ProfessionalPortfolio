@@ -110,11 +110,16 @@ textarea {
     position: absolute;
     right: 5px;
     top: 5px;
+
+    transition-property: padding;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #resume:hover{
     color: blue;
     border: 3px solid blue;
+    padding: 1vh 2vw;
 }
 #myimage{
     display: inline-block;
@@ -132,5 +137,27 @@ textarea {
 
     #menulist{
         top: 50%;
+    }
+
+    .menu{
+        position: absolute;
+        z-index: 2;
+        width: 80vw;
+    }
+
+
+
+    #main{
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    #contactform{
+        width: 80vw;
+    }
+
+    #contactform *{
+        width: 100%;
     }
   }
