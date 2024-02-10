@@ -68,7 +68,7 @@
     transition-timing-function: ease-in-out;
 }
 
-form {
+#contactform {
 
     width: 40%;
     position: relative;
@@ -79,7 +79,13 @@ form {
     color: rgb(47, 0, 255);
 }
 
-form label,
+#contactkalink{
+    width: 20vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contactform label,
 input,
 textarea {
     display: inline-block;
@@ -128,6 +134,25 @@ textarea {
 #cross{display: none;}
 #show{display: none;}
 
+#doc{
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#docform *{
+    border: 2px solid green;
+    display: inline;
+    width: 10;
+}
+#show{
+    display: none;
+}
+
 @media screen and (max-width: 1142px) {
     #cross{
         display: inline;
@@ -167,4 +192,7 @@ textarea {
     #show{
         display: inline;
     }
+     #contactkalink{
+     width: 100%;   
+    } 
   }
