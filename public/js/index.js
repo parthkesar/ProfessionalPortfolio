@@ -1,9 +1,11 @@
 const list = '<span onclick="menuloadagain()" style="position: absolute; top: 1px; left: 1px; color: rgb(47, 0, 255); " id="show" > <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/> <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/> <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/> </svg> </span> ';
 const resume = '<a href="" id="resume" target="_blank">RESUME</a>';
-let tx = '<h1 style="text-align: center; margin-top: 10vh; width: 100%;">I am a <span style="color: rgb(47, 0, 255); border-right: 2px solid rgb(47, 0, 255); text-decoration: underline;" id="vartext"></span></h1>';
-let arr = ["Software Engineer ", "FullStack Web Developer ", "System Designer ", "Database Administrator ", "Data Analysist ", "Data Scientist ", "Algorithmist "];
+const tx = '<h1 style="text-align: center; margin-top: 10vh; width: 100%;">I am a <span style="color: rgb(47, 0, 255); border-right: 2px solid rgb(47, 0, 255); text-decoration: underline;" id="vartext"></span></h1>';
+const arr = ["Software Engineer ", "FullStack Web Developer ", "System Designer ", "Database Administrator ", "Data Analysist ", "Data Scientist ", "Algorithmist "];
+const resdetails = '<ul style="font-size: larger; list-style-position: inside; margin: 22px; width: 50%;"><li class="maindetails"><b>Name:- </b>Parth Kesar</li><li class="maindetails"><b>Date of Birth:- </b>5<sup>th</sup> November 2007</li><li class="maindetails"><b>Birth Place:- </b>Chandigarh, India</li><li class="maindetails"><b>Nationality:- </b>Indian</li></ul>';
+
 function initial() {
-    document.getElementById("main").innerHTML = list + resume + tx;
+    document.getElementById("main").innerHTML = list + resume + tx + resdetails;
     let sp = document.getElementById("vartext");
     let i = 0;
     let it = 0;
@@ -69,7 +71,7 @@ for (var x = 0; x < bt.length; x++) {
 
 bt[0].addEventListener("click", () => {
 
-    document.getElementById("main").innerHTML = list + resume + tx;
+    document.getElementById("main").innerHTML = list + resume + tx + resdetails;
     // let arr = ["Software Engineer ", "FullStack Web Developer ", "System Designer ", "Database Administrator ", "Data Analysist ", "Data Scientist ", "Algorithmist "];
     let sp = document.getElementById("vartext");
     let i = 0;

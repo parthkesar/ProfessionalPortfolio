@@ -68,6 +68,10 @@
     transition-timing-function: ease-in-out;
 }
 
+.maindetails{
+    line-height: 30px;
+}
+
 #contactform {
 
     width: 40%;
